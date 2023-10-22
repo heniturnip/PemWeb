@@ -1,0 +1,60 @@
+body{
+    margin: 0%;
+}
+.header{
+    display: flex;
+    justify-content: start;
+    background: linear-gradient(white, rgb(9, 212, 87));
+    padding: 20px;
+}
+
+.gambar{
+    width: 150px;
+}
+
+.judul{
+    padding-top: 10px;
+    padding-left: 370px;
+
+    text-align: center;
+}
+
+.navbar{
+    display: flex;
+    justify-content: end;
+    list-style: none;
+    padding: 5px;
+    background-color: black;
+}
+
+.menu a{
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+.tabel{
+    background:linear-gradient(black, rgb(9, 212, 87));
+    color:white;
+    padding:20px 0px 20px 20px;
+    width:400px;
+    margin:20px auto;
+    border-radius:70px 0;
+ }
+
+ h2{
+    color: white;
+    font-size: large;
+    text-align: center;
+}
+
+label{
+    color: white;
+}
+
+.bawah{
+
+    color: black;
+    text-align: center;
+    font-size: 15px;
+}

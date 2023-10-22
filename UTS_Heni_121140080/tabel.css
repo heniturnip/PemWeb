@@ -1,0 +1,81 @@
+body{
+    margin: 0%;
+}
+.header{
+    display: flex;
+    justify-content: start;
+    background: linear-gradient(white, rgb(9, 212, 87));
+    padding: 20px;
+}
+
+.gambar{
+    width: 150px;
+}
+
+.judul{
+    padding-top: 10px;
+    padding-left: 370px;
+
+    text-align: center;
+}
+
+.navbar{
+    display: flex;
+    justify-content: end;
+    list-style: none;
+    padding: 5px;
+    background-color: black;
+}
+
+.menu a{
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+.tabel {
+    width: 95%;
+    margin: 20px 20px 20px 40px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.bawah{
+    color: black;
+    text-align: center;
+    font-size: 15px;
+}
+
+table {
+    width: 100%;
+    border-style: solid;
+    margin-bottom: 15px;
+    margin: 0%;
+    padding: 0%;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+th, td {
+    padding: 5px;
+    text-align: left;
+}
+
+tr:nth-child(even) {
+    background-color:rgb(9, 212, 87);
+}
+
+tr:nth-child(odd) {
+    background-color: black;
+    color: white
+}
+
+th {
+    background-color:  white;
+    color: black;
+    text-align: center  ;
+}
+

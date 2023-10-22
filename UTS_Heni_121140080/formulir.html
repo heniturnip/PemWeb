@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="formulir.css">
+    <title>UTS | Heni | Formulir DIM</title>
+</head>
+
+<header class="header">
+    <img src="logo_itera_bulet_head.png" alt="logo ITERA" width="500" class="gambar">
+    <div class="judul"> 
+        <h1>FORMULIR DATA INDUK MAHASISWA</h1>
+        <h1>INSTITUT TEKNOLOGI SUMATERA</h1>
+    </div>
+</header>
+
+<body>
+    <nav class="navbar">
+        <li class="menu"><a href="beranda.html" target="_blank">Beranda</a></li>            
+        <li class="menu"><a href="formulir.html" target="_blank">Formulir</a> </li>
+        <li class="menu"><a href="tabel.html" target="_blank">Tabel</a></li>
+    </nav>
+    
+    <div class="tabel form">
+        <form id="dimForm">
+            <h2>Formulir Data Induk Mahasiswa</h2>
+            <label for="Nama"> Nama: </label><br>
+            <input type="text" id="nama" name="nama" required><br>
+
+            <label for="NIM"> NIM: </label><br>
+            <input type="number" id="nim" name="nim" required><br>
+
+            <label for="Program_Studi"> Program Studi: </label><br>
+            <input type="text" id="prodi" name="prodi" required><br>
+
+            <label for="Jalur_Masuk"> Jalur Masuk: </label><br>
+            <input type="text" id="JM" name="JM"><br>
+
+            <label for="Email"> Email: </label><br>
+            <input type="email" id="email" name="email" required><br>
+
+            <label for="Password"> Password: </label><br>
+            <input type="password" id="password" name="password"><br>
+
+            <label for="Jenis_Kelamin"> Jenis Kelamin: </label><br>
+            <input type="text" id="JK" name="JK"><br>
+
+            <label for="Tanggal_Lahir"> Tanggal Lahir: </label><br>
+            <input type="date" id="TL" name="TL" required><br>
+
+            <label for="Alamat"> Alamat: </label><br>
+            <textarea id="alamat" name="alamat" rows="4" required></textarea><br>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <script src="formulir.js"></script>
+</body>
+
+<footer class="bawah">
+    <p>Website Heni &copy; 2023 Hak Cipta Dilindungi</p>
+</footer>
+
+</html>

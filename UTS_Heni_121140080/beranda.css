@@ -1,0 +1,53 @@
+body{
+    margin: 0%;
+}
+.header{
+    display: flex;
+    justify-content: start;
+    background: linear-gradient(white, rgb(9, 212, 87));
+    padding: 20px;
+}
+
+.gambar{
+    width: 150px;
+}
+
+.judul{
+    padding-top: 10px;
+    padding-left: 370px;
+
+    text-align: center;
+}
+
+.navbar{
+    display: flex;
+    justify-content: end;
+    list-style: none;
+    padding: 5px;
+    background-color: black;
+}
+
+.menu a{
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+.tentang {
+    min-height: 60vh;
+    padding: 20px;
+    background: linear-gradient(rgb(9, 212, 87), white);
+    text-align: justify;
+}
+
+.subjudul{
+    color: white;
+    text-align: center;
+}
+
+.bawah{
+
+    color: black;
+    text-align: center;
+    font-size: 15px;
+}
