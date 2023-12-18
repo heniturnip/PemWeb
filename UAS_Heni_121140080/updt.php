@@ -38,7 +38,7 @@ if (isset($_POST['id'])) {
 		header("Location: form.php?ms=bobot is required");
 	    exit;
 
-        $sql = "UPDATE user_data
+        $sql = "UPDATE mahasiswa
                 SET nama='$nama', nim='$nim', gender ='$gender', kodemk='$kodemk', 'nilai='$nilai', bobot ='$bobot'
                 WHERE id=$id";
         $result = mysqli_query($conn, $sql);
