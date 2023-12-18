@@ -32,30 +32,12 @@
     text-decoration: none;
 }
 
-.sidebar ul li {
-    list-style: none;
-}
-
-ul li:hover a {
-    padding-left: 100px;
-    background: #0b7038;
-    color: white;
-}
-
-.main_content {
-    margin: 5px;
-    padding: 20px;
-}
 
 body {
     background-image: linear-gradient(to bottom, #33b640, #f3f7f3);
 }
 
-.deskripsi {
-    text-align: justify;
-    font-size: 18px;
-    line-height: 18px;
-}
+
 
 h1{
     text-align: center;
@@ -65,7 +47,6 @@ h1{
 h2 {
     text-align: center;
     letter-spacing: 2px;
-    font-size: 35px;
     margin-bottom: 10px;
     text-transform: capitalize;
 }
@@ -74,33 +55,9 @@ p {
     margin-bottom: 3px;
     letter-spacing: 1.5px;
     line-break: 1px;
-    line-height: 18px;
-    font-size: 18px;
     padding: 10px;
 }
  
-ul li {
-    letter-spacing: 1px;
-    margin-bottom: 5px;
-    text-align: justify;
-    padding: 5px;
-    margin: 5px;
-}
-
-ol li {
-    letter-spacing: 1px;
-    margin-bottom: 5px;
-    text-align: justify;
-    padding: 5px;
-    margin: 5px;
-}
-
-span {
-    color: rgb(0, 0, 0);
-    font-weight: bold;
-    text-transform: capitalize;
-    font-size: 20px;
-}
 
 .biodata {
     padding: 20px;
@@ -108,20 +65,6 @@ span {
     font-size: 18px;
     align-items: center;
 }
-
-.tugas {
-    padding: 20px;
-    text-align: justify;
-    font-size: 18px;
-}
-
-.catatan {
-    padding: 20px;
-    text-align: justify;
-    font-size: 18px;
-    column-rule-color: #0b7038;
-}
-
 
 footer {
     display: flex;
