@@ -4,19 +4,17 @@ Pemrograman Web RC -->
 
 <?php 
 
-if (isset($_POST['id']) &&
-	isset($_POST['nama'])) {
+if (isset($_POST['id'])) {
 
 	include "database.php";
 
-	$id = $_POST['id'];
 	$nama = $_POST['nama'];
     $nim = $_POST['nim'];
 	$gender = $_POST['gender'];
     $kodemk = $_POST['kodemk'];
     $nilai = $_POST['nilai'];
     $bobot = $_POST['bobot'];
-
+	$id = $_POST['id'];
 
 	if (empty($id)) {
 		header("Location: form.php?ms=Id is required");
@@ -24,7 +22,7 @@ if (isset($_POST['id']) &&
     }else if (empty($nama)) {
 		header("Location: form.php?ms=Nama is required");
 	    exit;
-	}else if (empty($nim)) {
+	} else if (empty($nim)) {
 		header("Location: form.php?ms=Nim is required");
 	    exit; 
     } else if (empty($gender)) {
@@ -34,28 +32,26 @@ if (isset($_POST['id']) &&
 		header("Location: form.php?ms=KodeMK is required");
 	    exit; 
     } else if (empty($nilai)) {
-		header("Location: form.php?ms=Nilai is required");
+		header("Location: form.php?ms=nilai is required");
 	    exit; 
 	}else if (empty($bobot)) {
-		header("Location: form.php?ms=Bobot is required");
+		header("Location: form.php?ms=bobot is required");
 	    exit;
-	}
-        $sql = "INSERT INTO mahasiswa(id, nama, nim, gender, kodemk, nilai, bobot)
-                VALUES('$id', '$nama', '$nim', '$gender', '$kodemk', '$nilai', '$bobot')";
+
+        $sql = "UPDATE user_data
+                SET nama='$nama', nim='$nim', gender ='$gender', kodemk='$kodemk', 'nilai='$nilai', bobot ='$bobot'
+                WHERE id=$id";
         $result = mysqli_query($conn, $sql);
 
         if ($result) {
-        	$ms = "Sukses Ditambahkan!";
-        	header("Location:form.php?ms=$ms");
+        	$ms = "Berhasil Diubah";
+        	header("Location: update.php?ms=$ms&id=$id");
 	        exit;
         }else {
-        	$ms = "Gagal Ditambahkan!";
-        	header("Location: form.php?ms=$ms");
+        	$ms = "Gagal Diubah";
+        	header("Location: update.php?ms=$ms&id=$id");
 	        exit;
         }
-	}
 
-else {
-	header("Location: form.php");
-	exit;
+	}
 }
