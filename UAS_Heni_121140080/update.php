@@ -1,9 +1,9 @@
-<!-- Dila Ayu Prastita
-121140075
+<!-- Heni Artha Uli br Turnip
+121140080
 Pemrograman Web RC -->
 
 <?php 
-// Mendeklarasikan bahwa file ini membutuhkan (require) file 'function.php', yang berisi fungsi-fungsi yang diperlukan untuk interaksi, yaitu fungsi tambah
+// Mendeklarasikan bahwa file ini membutuhkan (require), yang berisi fungsi-fungsi yang diperlukan untuk interaksi, yaitu fungsi tambah
 require 'database.php';
 
     if (isset($_GET['id'])) {
@@ -24,7 +24,7 @@ require 'database.php';
     <link rel="stylesheet" href="clientside.css">
 </head>
 <body>
-	<form action="function.php" method="post">
+	<form action="updt.php" method="post">
 		<fieldset>
 			<legend>Edit:</legend>
 			<br />
