@@ -18,7 +18,7 @@ Pemrograman Web RC -->
     <div class="content">
         <div class="sidebar">
             <ul>
-                <li><a href="index.html">Home</a></li>
+                <li><a href="index.php">Home</a></li>
                 <li><a href="read.php">Data Akademik</a></li>
                 
             </ul>
